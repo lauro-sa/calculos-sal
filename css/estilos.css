@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #343132, #fffde7);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  color: rgb(178, 178, 178);
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(187, 130, 130);
+  background-color: #fffde7;
+  /* Modo Dark */
+}
+.calculator #display {
+  color: rgb(57, 57, 57);
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.calculator #equal {
+  height: 130px;
+}
+.calculator #clear {
+  background-color: #E87461;
+  color: #7c797c;
+}
+.calculator .btn-number {
+  background-color: #69A2B0;
+  color: black;
+}
+.calculator .btn-operator {
+  background-color: #4E598C;
+  color: whitesmoke;
+}
+.calculator .btn-equal {
+  background-color: #71B48D;
+  color: black;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+}
+.calculator.dark #display {
+  color: #f8fafb;
+}
+.calculator.dark #clear {
+  *background-color: #4c35aa;
+  background-color: #3C7A89;
+  color: white;
+}
+.calculator.dark .btn-number {
+  background-color: #B8DBD9;
+  color: black;
+  font-size: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: #FC9E4F;
+  color: #7c797c;
+}
+.calculator.dark .btn-equal {
+  background-color: #847996;
+  color: #ffffff;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: rgb(178, 178, 178);
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=estilos.css.map */
